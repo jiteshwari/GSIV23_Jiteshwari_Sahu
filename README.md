@@ -1,2 +1,2 @@
 # GSIV23_Jiteshwari_Sahu
-GSIV23 Movie App Project
+GSIV23 Movie Browser Project
