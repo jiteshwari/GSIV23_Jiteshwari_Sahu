@@ -4,6 +4,24 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+## Project Description 
+
+Used Redux for state managment
+Router is used for routing
+Axios is used for API call 
+
+Jest is used for unit testing
+
+My API key - 02deaee63ee8ccb2432c818f541f44b4
+
+for getting all details: https://api.themoviedb.org/3/movie/now_playing?api_key=02deaee63ee8ccb2432c818f541f44b4&page=${pageNumber}
+
+for single movie detail:  https://api.themoviedb.org/3/movie/${movie_id}?api_key=02deaee63ee8ccb2432c818f541f44b4
+
+for searching API: https://api.themoviedb.org/3/search/movie?query=${keyword}&api_key=02deaee63ee8ccb2432c818f541f44b4&page=${pageNumber}
+
+
+
 In the project directory, you can run:
 
 ### `npm start`
@@ -11,14 +29,9 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
+ 
 ### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
+ 
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
