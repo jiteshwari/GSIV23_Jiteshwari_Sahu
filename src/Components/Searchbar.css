@@ -3,6 +3,7 @@
 .main {
     width: 50%;
     margin: 10px;
+    flex: 0.7;
   
 }
 
@@ -20,4 +21,8 @@
     text-align: center;
     pointer-events: none;
     color: #aaa;
+}
+
+.xyz {
+    flex: 0.3;
 }

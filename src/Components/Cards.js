@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
-const Cards = ({movie}) => {
+const Cards = ({movies}) => {
+
+
+
+  
   return (
     <>
+    {movies?.map((movie)=>
     <div className="card m-2" style={{ width: 17 + "rem" }}>
-    <NavLink to = '/detailpage' >    <img
-          src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZQj2a2GXhjvXPM7LWxRgZqZhGyNskBtndLg&usqp=CAU"}
+    <NavLink to = {`/detailpage/${movie.id}` }>  
+      <img
+          src={`https://www.themoviedb.org/t/p/w220_and_h330_face${movie.poster_path}`}
           class="card-img-top"
           alt="..."
         />      </NavLink>
@@ -18,8 +24,8 @@ const Cards = ({movie}) => {
             <p class="card-text"> Rating:{movie.vote_average}★ </p>
           </div>
         </div>
-        <p className="m-2">Description:{movie.overview} </p>
-      </div>
+        <p className="m-2">Released : {movie.release_date} </p> 
+      </div>)}
   
 
     </>
